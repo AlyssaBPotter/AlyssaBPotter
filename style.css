@@ -1,0 +1,422 @@
+/*Page size and position*/
+body {
+  position: center;
+  margin: auto;
+  width: 75vw;
+  height: 100vh;
+  text-align: center;
+  background: url('Site-images/Backgrounds-headers/SiteBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  position: center;
+  background:rgba(200,200,200,0.8);
+  padding-bottom: 50px;
+  padding-top:30px;
+  box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 1);
+}
+
+hr{
+  border:2px dotted #333;
+  width:70%;
+  margin-top:50px;
+  margin-bottom:10px;
+}
+
+.center-main{
+  position:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/*Header Image*/
+.header-img{
+    width: 50%;
+    height: 20vh;
+    background: url('Site-images/Backgrounds-headers/AlyssaHeader.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*These are the settings of the navbar box*/
+/*.navcontainer{
+    width: 100vw;
+    position:sticky;
+    background-color: transparent;
+    margin-bottom: 20px;
+}*/
+
+.nav1{
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+  position:sticky;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
+  color: #f2f2f2;
+  overflow: hidden;
+  height: 50px;
+  background-color: rgba(51, 52, 53, 0.5);
+  top: 0px;
+  bottom: 0px;
+}
+/*Look into how this works*/
+  .nav1 a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    /*This changes the navbar when you hover over each link*/
+    .nav1 a:hover {
+      background-color: transparent;
+      color: black;
+      text-shadow: 0px 3px 6px white;
+      box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 1);
+    }
+    .nav1 .active {
+      background-color: transparent;
+      color: black;
+      text-shadow: 0px 3px 6px white;
+      box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 1);
+    }
+
+/*------------------------Text Alignments & Titles------------------------------------------------*/
+
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.left{
+  display:block;
+  margin-left: 5px;
+  margin-right:auto;
+  text-align: left;
+}
+
+.right{
+  display:block;
+  margin-left: auto;
+  margin-right: 5px;
+  text-align: right;
+}
+
+.row{
+  display: flex;
+}
+
+.column-book-left{
+  margin-left: 4vw;
+  flex: 50%;
+}
+.column-book-right{
+  margin-right: 4vw;
+  flex: 50%;
+}
+.column-text-left{
+  margin-left: 10vw;
+  text-align: right;
+  flex: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:14px;
+  font-weight: 100;
+}
+.column-text-right{
+  margin-right: 10vw;
+  text-align:justify;
+  flex: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:14px;
+  font-weight: 100;
+}
+
+.text-alignment-center{
+  text-align: center;
+  margin-inline: 20%;
+}
+
+.text-alignment-left{
+    text-align: left;
+    /*display: inline-block*/
+    margin-inline: 15%;
+}
+
+.title{
+  font-size: 80px;
+  font-family: "Goudy Old Style", sans-serif;
+  font-style: italic;
+  color:black;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, .8);
+}
+
+.subtitle{
+  font-size:60px;
+  font-family:"Helvetica";
+}
+
+.heading{
+  font-size: 40px;
+  font-family: "Brush Script MT", cursive;
+}
+
+.author-name{
+  font-size:17px;
+  font-family:"Helvetica";
+  color: #333;
+}
+/*-------------------------------------SHADOWS-----------------------*/
+
+
+.book-shadow{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+/*-----------------------------FOOTER-------------------------------------------*/
+footer{
+  background-color: rgba(51, 52, 53, 0.7);
+  padding-bottom:40px;
+}
+
+.footer-row{
+  display:flex;
+  margin-bottom:20px;
+}
+
+.footer-social{
+  display:block;
+  margin-left: auto;
+  margin-right: 5%;
+  text-align: left;
+  font-size:17px;
+  font-style: bold;
+  font-family:"Helvetica";
+  color: #f2f2f2;
+}
+
+/*Footer Navigation*/
+.footer-navcontainer{
+  width:auto;
+  position:absolute;
+  padding-bottom:40px;
+}
+
+.footer-nav{
+  float:left;
+  font-size:30px;
+  font-weight:bold;
+  text-align:center;
+  overflow:hidden;
+}
+    /*Navbar Text settings*/ 
+.footer-nav a {
+  font-family:"Lato",sans-serif;
+  color:white;
+  background-color: transparent;
+  float:left;
+  text-align:center;
+  padding:14px 10px;
+  text-decoration:none;
+  font-size:17px;
+} 
+  /*This changes the footer navbar when you hover over each link*/
+.footer-nav a:hover {
+  color:gray;
+}
+
+.footer-nav .active-foot{
+  color: gray;
+}
+
+.foot-col{
+  flex:50%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.foot-col-subhead{
+  font-size:20px;
+  font-family:"Helvetica";
+  font-weight:75;
+  padding-top:10px;
+  margin:0;
+}
+
+.foot-col-text{
+  font-size:17px;
+  font-family:"Helvetica";
+  text-align: center;
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin:0;
+}
+
+
+/*----------------------------- SLIDESHOW 1-------------------------------------------*/
+/* SLIDESHOW 1 */
+/* external css: flickity.css */
+
+.slide-shadow{
+  box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 1);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery_container { 
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.gallery {
+  background: transparent;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 10px; 
+  background: transparent; 
+  align-items: center;
+  justify-content: center;
+  counter-increment: gallery-cell; 
+}
+/*
+.gallery-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}   */
+
+/* fade in lazy loaded image */
+.gallery-cell-image.flickity-lazyloaded,
+.gallery-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+/*--------------------------------------------SOCIAL MEDIA-----------------------------------------------------*/
+
+.social-row{
+  display: inline-flex;
+  text-align: center;
+}
+.social-nav{
+  display:inline-flexbox;
+  text-align: right;
+  margin-left:76%;
+}
+
+ /* Style all font awesome icons */
+ .fa {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 56px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+.fa-twitter.foot {
+  background: transparent;
+  color: white;
+} 
+.fa-twitter.navbar {
+  background: transparent;
+  color: white;
+} 
+
+.fa-instagram{
+  background: #fb3958;
+  color:white;
+}
+.fa-instagram.foot{
+  background: transparent;
+  color:white;
+}
+.fa-instagram.navbar{
+  background: transparent;
+  color:white;
+}
+
+.fa-tumblr{
+  background: #030043;
+  color:white;
+}
+.fa-tumblr.foot{
+  background: transparent;
+  color:white;
+}
+.fa-tumblr.navbar{
+  background: transparent;
+  color:white;
+}
+
+.wattpad{
+  background: orangered;
+  font-size: 60px;
+  width: 50px;
+  align-items: center;
+  text-align: center;
+  text-decoration:none; 
+}
+.wattpad:hover{
+  opacity: .7;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+.wattpad.foot{
+  background: transparent;
+  color:white;
+}
+.wattpad.navbar{
+  background: transparent;
+  color:white;
+  font-size: 25px;
+}
+
+.column{
+  flex:50%;
+  padding:5px;
+}
+
+.nav-column{
+  flex:50%;
+  padding:1px;
+}
