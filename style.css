@@ -26,6 +26,11 @@ hr{
   margin-bottom:10px;
 }
 
+footer{
+  background-color: rgba(51, 52, 53, 0.7);
+  padding-bottom:40px;
+}
+
 .center-main{
   position:center;
   display: block;
@@ -46,14 +51,76 @@ hr{
     margin-right: auto;
 }
 
-/*These are the settings of the navbar box*/
-/*.navcontainer{
-    width: 100vw;
-    position:sticky;
-    background-color: transparent;
-    margin-bottom: 20px;
-}*/
+.button{
+  border-color: #333;
+  border-radius: 5%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  color:rgb(22, 22, 22);
+  overflow: hidden;
+  height: 30px;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+}
+.button:hover{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
+  color:#f2f2f2;
+  overflow: hidden;
+  background-color: rgba(51, 52, 53, 0.8);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
+}
+/*-----------------------------------SOCIAL MEDIA--------------------------------------------------*/
+ /* Style all font awesome icons */
+ .fa {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 56px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  }
+
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  } 
+
+  .fa-instagram{
+    background: #fb3958;
+    color:white;
+  }
+
+  .fa-tumblr{
+    background: #030043;
+    color:white;
+  }
+
+  .wattpad{
+    background: orangered;
+    font-size: 60px;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    text-decoration:none; 
+  }
+  .wattpad:hover{
+    opacity: .7;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  }
+
+
+/*-----------------------------------------NAVBAR-------------------------------------------*/
 .nav1{
   display: flex;
   flex-direction: row;
@@ -72,7 +139,6 @@ hr{
 }
 /*Look into how this works*/
   .nav1 a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -93,6 +159,110 @@ hr{
       box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 1);
     }
 
+  .nav1 b {
+    float:right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    }
+    
+    .fa-twitter.navbar {
+      margin-left:auto;
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+    } 
+    .fa-instagram.navbar{
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+    }
+    .fa-tumblr.navbar{
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+    }
+    .wattpad.navbar{
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+      display: flex;
+    }
+
+.nav2{
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+  font-family:"Lato",sans-serif, bold;
+  color:white;
+  background-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  height: 50px;
+  top: 0px;
+  bottom: 0px;
+}
+/*Look into how this works*/
+  .nav2 a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    /*This changes the navbar when you hover over each link*/
+    .nav2 a:hover {
+      background-color: transparent;
+      color: black;
+      text-shadow: 0px 3px 6px white;
+    }
+    .nav2 .active {
+      background-color: transparent;
+      color: black;
+      text-shadow: 0px 3px 6px white;
+    }
+
+  .nav2 b {
+    float:right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    }
+    
+    .fa-twitter.navbar {
+      margin-left:auto;
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+    } 
+    .fa-instagram.navbar{
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+    }
+    .fa-tumblr.navbar{
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+    }
+    .wattpad.navbar{
+      float: right;
+      background: transparent;
+      color:white;
+      height: fit-content;
+      display: flex;
+    }
 /*------------------------Text Alignments & Titles------------------------------------------------*/
 
 
@@ -133,16 +303,16 @@ hr{
   margin-left: 10vw;
   text-align: right;
   flex: 50%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:18px;
   font-weight: 100;
 }
 .column-text-right{
   margin-right: 10vw;
   text-align:justify;
   flex: 50%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:18px;
   font-weight: 100;
 }
 
@@ -176,9 +346,16 @@ hr{
 }
 
 .author-name{
-  font-size:17px;
-  font-family:"Helvetica";
+  font-size:18px;
+  font-family:"Helvetica", bold;
   color: #333;
+}
+
+.rights-warning{
+  text-align:center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:14px;
+  font-weight: 100;
 }
 /*-------------------------------------SHADOWS-----------------------*/
 
@@ -187,85 +364,6 @@ hr{
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
 }
 /*-----------------------------FOOTER-------------------------------------------*/
-footer{
-  background-color: rgba(51, 52, 53, 0.7);
-  padding-bottom:40px;
-}
-
-.footer-row{
-  display:flex;
-  margin-bottom:20px;
-}
-
-.footer-social{
-  display:block;
-  margin-left: auto;
-  margin-right: 5%;
-  text-align: left;
-  font-size:17px;
-  font-style: bold;
-  font-family:"Helvetica";
-  color: #f2f2f2;
-}
-
-/*Footer Navigation*/
-.footer-navcontainer{
-  width:auto;
-  position:absolute;
-  padding-bottom:40px;
-}
-
-.footer-nav{
-  float:left;
-  font-size:30px;
-  font-weight:bold;
-  text-align:center;
-  overflow:hidden;
-}
-    /*Navbar Text settings*/ 
-.footer-nav a {
-  font-family:"Lato",sans-serif;
-  color:white;
-  background-color: transparent;
-  float:left;
-  text-align:center;
-  padding:14px 10px;
-  text-decoration:none;
-  font-size:17px;
-} 
-  /*This changes the footer navbar when you hover over each link*/
-.footer-nav a:hover {
-  color:gray;
-}
-
-.footer-nav .active-foot{
-  color: gray;
-}
-
-.foot-col{
-  flex:50%;
-  margin-top: 50px;
-  margin-bottom: 0px;
-}
-
-.foot-col-subhead{
-  font-size:20px;
-  font-family:"Helvetica";
-  font-weight:75;
-  padding-top:10px;
-  margin:0;
-}
-
-.foot-col-text{
-  font-size:17px;
-  font-family:"Helvetica";
-  text-align: center;
-  padding-left:15%;
-  padding-right:15%;
-  padding-top:5px;
-  padding-bottom:5px;
-  margin:0;
-}
 
 
 /*----------------------------- SLIDESHOW 1-------------------------------------------*/
@@ -327,96 +425,17 @@ footer{
   display: inline-flex;
   text-align: center;
 }
-.social-nav{
-  display:inline-flexbox;
-  text-align: right;
-  margin-left:76%;
+.row2{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+.row3{
+  display:flex;
+  flex-direction: row;
+  margin-left: auto;
+  justify-content: space-between;
+  width: 150px;
 }
 
- /* Style all font awesome icons */
- .fa {
-  margin-bottom: 20px;
-  padding: 20px;
-  font-size: 56px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-} 
-.fa-twitter.foot {
-  background: transparent;
-  color: white;
-} 
-.fa-twitter.navbar {
-  background: transparent;
-  color: white;
-} 
-
-.fa-instagram{
-  background: #fb3958;
-  color:white;
-}
-.fa-instagram.foot{
-  background: transparent;
-  color:white;
-}
-.fa-instagram.navbar{
-  background: transparent;
-  color:white;
-}
-
-.fa-tumblr{
-  background: #030043;
-  color:white;
-}
-.fa-tumblr.foot{
-  background: transparent;
-  color:white;
-}
-.fa-tumblr.navbar{
-  background: transparent;
-  color:white;
-}
-
-.wattpad{
-  background: orangered;
-  font-size: 60px;
-  width: 50px;
-  align-items: center;
-  text-align: center;
-  text-decoration:none; 
-}
-.wattpad:hover{
-  opacity: .7;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-}
-.wattpad.foot{
-  background: transparent;
-  color:white;
-}
-.wattpad.navbar{
-  background: transparent;
-  color:white;
-  font-size: 25px;
-}
-
-.column{
-  flex:50%;
-  padding:5px;
-}
-
-.nav-column{
-  flex:50%;
-  padding:1px;
-}
