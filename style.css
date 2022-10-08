@@ -14,7 +14,6 @@ body {
 
 main {
   position: center;
-  max-width: 60%;
   background:rgba(200,200,200,0.8);
   padding-bottom: 50px;
   padding-top:30px;
@@ -44,7 +43,7 @@ footer{
 /*Header Image*/
 .header-img{
     max-width: 50%;
-    height: 20vh;
+    height:20%;
     background: url('Site-images/Backgrounds-headers/AlyssaHeader.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -129,7 +128,7 @@ footer{
   flex-direction: row;
   z-index: 5;
   position:sticky;
-  font-family: "Lucida Handwriting";
+  font-family: "Lucida Handwriting",cursive;
   text-align: center;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
   color: #f2f2f2;
