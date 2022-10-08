@@ -2,8 +2,8 @@
 body {
   position: center;
   margin: auto;
-  width: 75vw;
-  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
   text-align: center;
   background: url('Site-images/Backgrounds-headers/SiteBackground.jpg');
   background-size: cover;
@@ -37,17 +37,18 @@ footer{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  max-width: 60%;
 }
 
 /*Header Image*/
 .header-img{
-    width: 50%;
+    max-width: 50%;
     height: 20vh;
     background: url('Site-images/Backgrounds-headers/AlyssaHeader.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -127,13 +128,13 @@ footer{
   flex-direction: row;
   z-index: 5;
   position:sticky;
-  font-family: "Lucida Handwriting", cursive;
-  font-size: 30px;
+  font-family: "Lucida Handwriting";
   text-align: center;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
   color: #f2f2f2;
   overflow: hidden;
   height: 50px;
+  max-width: 100%;
   background-color: rgba(51, 52, 53, 0.5);
   top: 0px;
   bottom: 0px;
@@ -144,7 +145,7 @@ footer{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.06rem;
     }
     /*This changes the navbar when you hover over each link*/
     .nav1 a:hover {
@@ -165,7 +166,7 @@ footer{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     }
     
     .fa-twitter.navbar {
@@ -202,7 +203,6 @@ footer{
   font-family:"Lato",sans-serif, bold;
   color:white;
   background-color: transparent;
-  font-size: 30px;
   text-align: center;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
   overflow: hidden;
@@ -216,7 +216,7 @@ footer{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.06rem;
     }
     /*This changes the navbar when you hover over each link*/
     .nav2 a:hover {
@@ -235,7 +235,7 @@ footer{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     }
     
     .fa-twitter.navbar {
@@ -290,22 +290,25 @@ footer{
 
 .row{
   display: flex;
+  max-width: 100%;
 }
 
 .column-book-left{
   margin-left: 4vw;
   flex: 50%;
+  max-width: 100%;
 }
 .column-book-right{
   margin-right: 4vw;
   flex: 50%;
+  max-width: 50%;
 }
 .column-text-left{
   margin-left: 10vw;
   text-align: right;
   flex: 50%;
   font-family: 'Times New Roman', Times, serif;
-  font-size:18px;
+  font-size:1.125em;
   font-weight: 100;
 }
 .column-text-right{
@@ -313,7 +316,7 @@ footer{
   text-align:justify;
   flex: 50%;
   font-family: 'Times New Roman', Times, serif;
-  font-size:18px;
+  font-size:1.125em;
   font-weight: 100;
 }
 
@@ -381,8 +384,8 @@ footer{
 }
 
 .gallery_container { 
-  height: auto;
-  width: 80%;
+  max-height: auto;
+  max-width: 60%;
   margin: auto;
   margin-top: 10px;
   font-family: sans-serif;
@@ -393,8 +396,8 @@ footer{
 }
 
 .gallery-cell {
-  width: 100%;
-  height: 500px;
+  max-width: 100%;
+  max-height: 500px;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 10px; 
@@ -402,6 +405,7 @@ footer{
   align-items: center;
   justify-content: center;
   counter-increment: gallery-cell; 
+  overflow: hidden;
 }
 /*
 .gallery-cell-image {
