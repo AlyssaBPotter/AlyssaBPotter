@@ -306,7 +306,6 @@ footer{
 .column-book-left{
   margin-left: 4vw;
   flex: 50%;
-  max-width: 100%;
 }
   .column-book-left:hover{
     margin-left: 4vw;
@@ -316,7 +315,6 @@ footer{
 .column-book-right{
   margin-right: 4vw;
   flex: 50%;
-  max-width: 50%;
 }
   .column-book-right:hover{
     margin-right: 4vw;
@@ -347,7 +345,6 @@ footer{
 
 .text-alignment-left{
     text-align: left;
-    /*display: inline-block*/
     margin-inline: 15%;
 }
 
