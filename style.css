@@ -88,10 +88,11 @@ footer{
 
   /* Add a hover effect if you want */
   .fa:hover {
-    opacity: 0.7;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 1);
+    opacity: .9;
+    color:black;
   }
-
+  
   /* Twitter */
   .fa-twitter {
     background: #55ACEE;
@@ -104,12 +105,12 @@ footer{
   }
 
   .fa-tumblr{
-    background: #030043;
+    background: #35465c;
     color:white;
   }
 
   .wattpad{
-    background: orangered;
+    background: #ff4500;
     font-size: 60px;
     width: 50px;
     align-items: center;
@@ -117,13 +118,48 @@ footer{
     text-decoration:none; 
   }
   .wattpad:hover{
+    background: #00BAFF;
     opacity: .7;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    filter:invert(100%);
+    box-shadow: 0px 3px 6px 1px rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
   }
 
-
 /*-----------------------------------------NAVBAR-------------------------------------------*/
-.nav1{
+  .fa-twitter.socbar {
+    margin-left:auto;
+    float: right;
+    background: transparent;
+    color:white;
+    height: fit-content;
+  } 
+  .fa-instagram.socbar{
+    float: right;
+    background: transparent;
+    color:white;
+    height: fit-content;
+  }
+  .fa-tumblr.socbar{
+    float: right;
+    background: transparent;
+    color:white;
+    height: fit-content;
+  }
+  .wattpad.socbar{
+    float: right;
+    background: transparent;
+    color:white;
+    height: 3.125rem;
+    display: flex;
+  }
+  .wattpad.socbar:hover{
+    background: transparent;
+    filter:invert(100%);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0);
+    text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);  
+  }
+
+.nav-top{
   display: flex;
   flex-direction: row;
   z-index: 5;
@@ -140,7 +176,8 @@ footer{
   bottom: 0px;
 }
 /*Look into how this works*/
-  .nav1 a {
+  .nav-top a {
+    float:left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -148,55 +185,32 @@ footer{
     font-size: 1.06rem;
     }
     /*This changes the navbar when you hover over each link*/
-    .nav1 a:hover {
+    .nav-top a:hover {
       background-color: transparent;
       color: black;
       text-shadow: 0px 3px 6px white;
       box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 1);
     }
-    .nav1 .active {
+    /*Here is the settings for social media on top bar (social bar = socbar)*/
+    .nav-top a.socbar {
+      float:right;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 1.25rem;
+      }
+      .nav-top a.socbar:hover{
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+      }
+    .nav-top .active {
       background-color: transparent;
       color: black;
       text-shadow: 0px 3px 6px white;
       box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 1);
-    }
-
-  .nav1 b {
-    float:right;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.25rem;
     }
     
-    .fa-twitter.navbar {
-      margin-left:auto;
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-    } 
-    .fa-instagram.navbar{
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-    }
-    .fa-tumblr.navbar{
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-    }
-    .wattpad.navbar{
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-      display: flex;
-    }
-
-.nav2{
+    
+.nav-bot{
   display: flex;
   flex-direction: row;
   z-index: 5;
@@ -211,7 +225,7 @@ footer{
   bottom: 0px;
 }
 /*Look into how this works*/
-  .nav2 a {
+  .nav-bot a {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -219,51 +233,25 @@ footer{
     font-size: 1.06rem;
     }
     /*This changes the navbar when you hover over each link*/
-    .nav2 a:hover {
+    .nav-bot a:hover {
       background-color: transparent;
       color: black;
       text-shadow: 0px 3px 6px white;
+      box-shadow: 0px 0px 0px rgba(0,0,0,0);
     }
-    .nav2 .active {
+    .nav-bot a.socbar {
+      float:right;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 1.25rem;
+      }
+    .nav-bot .active {
       background-color: transparent;
       color: black;
       text-shadow: 0px 3px 6px white;
     }
 
-  .nav2 b {
-    float:right;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.25rem;
-    }
-    
-    .fa-twitter.navbar {
-      margin-left:auto;
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-    } 
-    .fa-instagram.navbar{
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-    }
-    .fa-tumblr.navbar{
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-    }
-    .wattpad.navbar{
-      float: right;
-      background: transparent;
-      color:white;
-      height: fit-content;
-      display: flex;
-    }
 /*------------------------Text Alignments & Titles------------------------------------------------*/
 
 
@@ -291,6 +279,28 @@ footer{
 .row{
   display: flex;
   max-width: 100%;
+}
+.row2{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+.row3{
+  display:flex;
+  flex-direction: row;
+  margin-left: auto;
+  justify-content: space-between;
+  width: 150px;
+}
+.social-row{
+  display: inline-flex;
+  text-align: center;
+}
+
+.column{
+  padding-left:10px;
+  padding-right:10px;
 }
 
 .column-book-left{
@@ -425,22 +435,4 @@ footer{
 }
 
 /*--------------------------------------------SOCIAL MEDIA-----------------------------------------------------*/
-
-.social-row{
-  display: inline-flex;
-  text-align: center;
-}
-.row2{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 150px;
-}
-.row3{
-  display:flex;
-  flex-direction: row;
-  margin-left: auto;
-  justify-content: space-between;
-  width: 150px;
-}
 
