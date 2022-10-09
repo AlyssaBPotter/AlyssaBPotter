@@ -209,7 +209,7 @@ footer{
       box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 1);
     }
     
-    
+/*---------------------------------------------FOOTER NAVIGTION BAR------------------------------------------------*/    
 .nav-bot{
   display: flex;
   flex-direction: row;
@@ -308,11 +308,21 @@ footer{
   flex: 50%;
   max-width: 100%;
 }
+  .column-book-left:hover{
+    margin-left: 4vw;
+    flex: 50%;
+    transform: scale(1.05);
+  }
 .column-book-right{
   margin-right: 4vw;
   flex: 50%;
   max-width: 50%;
 }
+  .column-book-right:hover{
+    margin-right: 4vw;
+    flex: 50%;
+    transform: scale(1.05);
+  }
 .column-text-left{
   margin-left: 10vw;
   text-align: right;
